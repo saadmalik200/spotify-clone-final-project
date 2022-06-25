@@ -11,9 +11,85 @@
     <link rel="stylesheet" href="../src/scss/pages/premium.html" />
     <link rel="stylesheet" href="../src/scss/pages/register.html" />
     <link rel="stylesheet" href="./scss/pages/support.html" />
+    <link
+      href="//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          backgroundPosition: {
+            bottom: "bottom",
+            "bottom-4": "center bottom 1rem",
+            center: "center",
+            left: "left",
+            "left-bottom": "left bottom",
+            "left-top": "left top",
+            right: "right",
+            "right-bottom": "right bottom",
+            "right-top": "right top",
+            top: "top",
+            "top-4": "center top 1rem",
+            "bp-xl": "46% 4%",
+            "bp-xxl": "44% 7%",
+            "pos-mob": "center top 40%",
+          },
+
+          extend: {
+            colors: {
+              primary: "#1ed760",
+              secondary: "#2941ab",
+              grey: "#919496",
+              third: "#d9dadc",
+            },
+            spacing: {
+              132: "132px",
+              89: "89px",
+              27: "28px",
+              17: "17px",
+              15: "15px",
+            },
+          },
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "992px",
+            xl: "1200px",
+            xxl: "1920px",
+            // => @media (min-width: 1200px) { ... }
+          },
+        },
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: Circular;
+        src: url("./fonts/Circular/CircularStd-Black.otf");
+      }
+
+      @font-face {
+        font-family: Circular1;
+        font-weight: light;
+        src: url("./fonts/Circular/CircularStd-Light.otf");
+      }
+
+      @font-face {
+        font-family: Circular2;
+        font-weight: normal;
+        src: url("./fonts/Circular/CircularStd-Medium.otf");
+      }
+
+      @font-face {
+        font-family: Circular3;
+        font-weight: bold;
+        src: url("./fonts/Circular/CircularStd-Bold.otf");
+      }
+    </style>
   </head>
-  <body>
+
+  <body class="font-['Circular']">
     <header>
       <script src="//unpkg.com/alpinejs" defer></script>
       <nav class="z-0 relative" x-data="{open:false,menu:false, lokasi:false}">
