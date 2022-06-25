@@ -33,6 +33,7 @@
             top: "top",
             "top-4": "center top 1rem",
             "bp-xl": "46% 4%",
+            "bp-xxl": "44% 7%",
             "pos-mob": "center top 40%",
           },
 
@@ -56,6 +57,7 @@
             md: "768px",
             lg: "992px",
             xl: "1200px",
+            xxl: "1920px",
             // => @media (min-width: 1200px) { ... }
           },
         },
@@ -110,7 +112,7 @@
                   </a>
                 </div>
                 <div class="hidden lg:block lg:ml-2">
-                  <div class="flex">
+                  <div class="flex items-center">
                     <a
                       href="#"
                       class="px-17 py-7 rounded-md text-base leading-5 text-white font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700"
@@ -130,10 +132,8 @@
                       Herunterladen
                     </a>
                     <a
-                      class="px-17 py-7 rounded-md text-base leading-5 text-white font-bold"
-                    >
-                      |
-                    </a>
+                      class="mx-17 my-7 bg-white h-[16px] w-[1px] rounded-md text-base leading-5 text-white font-bold"
+                    ></a>
                     <a
                       href="#"
                       class="px-17 py-7 rounded-md text-base leading-5 text-[#d9dadc] font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700"
@@ -151,10 +151,10 @@
                 </div>
               </div>
 
-              <div class="flex lg:hidden">
+              <div class="flex lg:hidden relative">
                 <button
                   @click="menu=!menu"
-                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 transition duration-150 ease-in-out relative z-10"
                   aria-label="Main menu"
                   aria-expanded="false"
                 >
@@ -187,61 +187,64 @@
                     ></path>
                   </svg>
                 </button>
-              </div>
-            </div>
-          </div>
-          <div
-            x-show="menu"
-            class="block md:hidden flex flex-col justify-between p-[38px] h-screen max-h-screen max-w-[100vw] overflow-y-scroll overflow-x-hidden w-[447px] bg-black fixed top-[3rem] right-[1.25rem]"
-          >
-            <div>
-              <a
-                href="#"
-                class="block pb-[25px] rounded-md text-white text-[36px] font-normal hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular2']"
-                >Premium
-              </a>
-              <a
-                href="#"
-                class="block pb-[25px] rounded-md text-white text-[36px] hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular2']"
-                >Support
-              </a>
-              <a
-                href="#"
-                class="block pb-[25px] rounded-md text-white text-[36px] hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular2']"
-                >Herunterladen
-              </a>
-              <a
-                class="mt-[18px] mb-[40px] block rounded-md text-white text-[24px] focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                >―
-              </a>
-              <a
-                href="#"
-                class="block pb-[25px] rounded-md text-third font-bold text-[28px] hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular1']"
-                >Registrieren
-              </a>
+                <div
+                  x-show="menu"
+                  class="block bg-[rgba(0,0,0,.75)] w-[100vw] h-[100vh] left-0 fixed top-0"
+                ></div>
+                <div
+                  x-show="menu"
+                  class="block lg:hidden flex flex-col justify-between p-[38px] h-screen max-w-[100vw] w-[447px] bg-black fixed sm:md:lg:fixed top-[0rem] right-[0rem] sm:md:lg:right-0"
+                >
+                  <div>
+                    <a
+                      href="#"
+                      class="block pb-[25px] rounded-md text-white text-[36px] font-normal hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular2']"
+                      >Premium
+                    </a>
+                    <a
+                      href="#"
+                      class="block pb-[25px] rounded-md text-white text-[36px] hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular2']"
+                      >Support
+                    </a>
+                    <a
+                      href="#"
+                      class="block pb-[25px] rounded-md text-white text-[36px] hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular2']"
+                      >Herunterladen
+                    </a>
+                    <p
+                      class="mt-[18px] mb-[40px] bg-white h-[2px] w-[20px] block rounded-md text-white text-[12px] focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    ></p>
+                    <a
+                      href="#"
+                      class="block pb-[25px] rounded-md text-third font-bold text-[28px] hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular1']"
+                      >Registrieren
+                    </a>
 
-              <a
-                href="#"
-                class="block pb-[25px] rounded-md text-third text-[28px] font-bold hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular1']"
-                >Anmelden
-              </a>
-            </div>
-            <div>
-              <a class="flex-shrink-0" href="#">
-                <img
-                  class="block lg:hidden h-27 w-89"
-                  src="./images/Spotify_Logo_RGB_White.png"
-                  alt="Logo"
-                />
-              </a>
+                    <a
+                      href="#"
+                      class="block pb-[25px] rounded-md text-third text-[28px] font-bold hover:text-primary focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out font-['Circular1']"
+                      >Anmelden
+                    </a>
+                  </div>
+                  <div class="mt-[13px]">
+                    <a class="flex-shrink-0" href="#">
+                      <img
+                        class="block lg:hidden h-27 w-89"
+                        src="./images/Spotify_Logo_RGB_White.png"
+                        alt="Logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="h-screen">
       <div
-        class="bg-[length:215%] h-screen bg-pos-mob bg-[url('./images/bursts-mobile.svg')] xl:bg-[length:170%] xl:bg-bp-xl sm:bg-[length:153%] sm:bg-[left_40%_center] sm:bg-[url('./images/bursts-tablet.svg')] xl:bg-[url('./images/bursts.svg')] bg-secondary"
+        class="bg-[length:215%] h-screen sm:md:lg:h-screen bg-pos-mob bg-[url('./images/bursts-mobile.svg')] xl:bg-[length:170%] sm:bg-[length:153%] sm:bg-[right_40%_center] sm:bg-[url('./images/bursts-tablet.svg')] xl:bg-[url('./images/bursts.svg')] bg-secondary bg-no-repeat overflow-hidden xl:bg-bp-xl xxl:bg-bp-xxl xl:min-h-[846px]"
       >
         <!-- style="background-image: url('./images/bursts.svg')" -->
         <div
@@ -249,7 +252,7 @@
         >
           <div>
             <h1
-              class="xl:text-[156px] text-5xl sm:text-[104px] font-bold text-primary xl:-indent-[33rem] xl:translate-x-[125px] sm:xl:-tracking-[0.4rem] xl:w-[800px] sm:w-[754px] w-[312px] xl:leading-[166px] sm:leading-[104px] xl:pb-10 sm:pb-6 pb-4"
+              class="xl:text-[156px] text-5xl sm:text-[104px] font-bold text-primary xl:-indent-[33rem] xl:translate-x-[125px] -tracking-[0.4rem] xl:w-[800px] sm:w-[754px] w-[312px] xl:leading-[166px] sm:leading-[104px] xl:pb-10 sm:pb-6 pb-4"
             >
               Listening is everything
             </h1>
@@ -260,18 +263,23 @@
               Millions of songs and podcasts. No credit card required.
             </p>
 
-            <button
-              class="bg-primary hover:scale-105 hover:bg-[#2DE26D] text-secondary py-3.5 px-8 rounded-full font-['Circular3']"
+            <div
+              class="active:ring-4 hover:scale-105 ring-white p-1 w-fit mx-auto rounded-full"
             >
-              GET SPOTIFY FREE
-            </button>
+              <button
+                class="bg-primary hover:bg-[#2DE26D] text-secondary py-3.5 px-8 rounded-full font-['Circular3'] leading-tight"
+              >
+                GET SPOTIFY FREE
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer
-      class="min-h-[530px] bg-black pt-[50px] pb-[20px] lg:pt-[80px] lg:pb-[50px]"
-    >
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black pt-[50px] pb-[20px] lg:pt-[80px] lg:pb-[50px]">
       <div
         class="mx-auto text-white md:w-[750px] lg:flex lg:flex-wrap lg:w-[970px] xl:w-[1170px]"
       >
