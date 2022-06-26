@@ -248,12 +248,13 @@
                             >What's your email?</span
                           >
                           <input
+                            required
                             placeholder="Enter your email."
                             type="email"
                             class="peer text-[16px] block p-3.5 rounded-[4px] w-full bg-white leading-[1.5rem] ring-1 ring-[#878787] hover:ring-black font-['Circular1'] font-bold placeholder-gray-600 focus:bg-white focus:ring-black focus:ring-4 focus:outline-none invalid:focus:ring-[#d31225] invalid:focus:ring-4 invalid:text-red"
                           />
                           <div
-                            class="hidden peer-invalid:visible peer-invalid:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
+                            class="hidden peer-invalid:visible peer-focus:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
                           >
                             <svg
                               role="img"
@@ -278,12 +279,13 @@
                             >Confirm your email</span
                           >
                           <input
+                            required
                             placeholder="Enter your email again."
                             type="email"
                             class="peer text-[16px] block p-3.5 rounded-[4px] w-full bg-white leading-[1.5rem] ring-1 ring-[#878787] hover:ring-black font-['Circular1'] font-bold placeholder-gray-600 focus:bg-white focus:ring-black focus:ring-4 focus:outline-none invalid:focus:ring-[#d31225] invalid:focus:ring-4 invalid:text-red"
                           />
                           <div
-                            class="hidden peer-invalid:visible peer-invalid:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
+                            class="hidden peer-invalid:visible peer-focus:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
                           >
                             <svg
                               role="img"
@@ -309,12 +311,13 @@
                             >Create a password</span
                           >
                           <input
+                            required
                             placeholder="Create a password."
                             type="password"
                             class="peer text-[16px] block p-3.5 rounded-[4px] w-full bg-white leading-[1.5rem] ring-1 ring-[#878787] hover:ring-black font-['Circular1'] font-bold placeholder-gray-600 focus:bg-white focus:ring-black focus:ring-4 focus:outline-none invalid:focus:ring-[#d31225] required:focus:ring-4 required:text-red"
                           />
                           <div
-                            class="hidden peer-required:visible peer-invalid:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
+                            class="hidden peer-required:visible peer-focus:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
                           >
                             <svg
                               role="img"
@@ -342,40 +345,296 @@
                           >
 
                           <input
+                            required
                             placeholder="Enter a profile name."
                             type="text"
                             class="peer text-[16px] block p-3.5 rounded-[4px] w-full bg-white leading-[1.5rem] ring-1 ring-[#878787] hover:ring-black font-['Circular1'] font-bold placeholder-gray-600 focus:bg-white focus:ring-black focus:ring-4 focus:outline-none invalid:focus:ring-[#d31225] invalid:focus:ring-4 invalid:text-red"
                           />
 
                           <span
-                            class="inline-block mt-[8px] text-[rgb(24_24_24)] font-['Circular1'] font-bold text-[14px]"
+                            class="peer-focus:hidden inline-block mt-[8px] text-[rgb(24_24_24)] font-['Circular1'] font-bold text-[14px]"
                           >
                             This appears on your profile.
                           </span>
+
+                          <div
+                            class="hidden peer-invalid:visible peer-focus:block mt-[8px] text-[#d31225] text-[14px] font-['Circular1'] font-light flex items-center"
+                          >
+                            <svg
+                              role="img"
+                              height="16"
+                              width="16"
+                              aria-label="Error:"
+                              class="inline-block fill-[#d31225]"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"
+                              ></path>
+                            </svg>
+                            <span class="inline-block ml-[4px]">
+                              You need to confirm your email.
+                            </span>
+                          </div>
                         </div>
 
                         <!-- Birth date -->
 
-                        <div class="flex justify-between">
-                          <label class="block text-gray-500 font-bold my-4"
-                            ><input
-                              type="checkbox"
-                              class="leading-loose text-pink-600"
-                            />
-                            <span
-                              class="py-2 text-sm text-gray-600 leading-snug"
-                            >
-                              Remember Me
-                            </span></label
+                        <div class="pb-[24px]">
+                          <div
+                            class="flex justify-between text-sm pb-[8px] w-full items-center"
                           >
-                          <label class="block text-gray-500 font-bold my-4"
-                            ><a
-                              href="#"
-                              class="cursor-pointer tracking-tighter text-black border-b-2 border-gray-200 hover:border-gray-400"
-                              ><span>Forgot Password?</span></a
-                            ></label
+                            <label class="">What's your date of birth?</label>
+                          </div>
+                          <div
+                            data-testid="dob-parent"
+                            class="flex justify-between"
                           >
+                            <div data-testid="day" class="w-[20%]">
+                              <div class="">
+                                <div class="pb-[8px] text-sm">
+                                  <label for="day" class="">Day</label>
+                                </div>
+                                <input
+                                  type="text"
+                                  aria-invalid="false"
+                                  id="day"
+                                  inputmode="numeric"
+                                  maxlength="2"
+                                  name="day"
+                                  pattern="((0?[1-9])|([12][0-9])|(3[01]))"
+                                  placeholder="DD"
+                                  required=""
+                                  value=""
+                                  class="w-full p-[14px] border border-[#878787] text-[#878787] rounded-[4px]"
+                                />
+                              </div>
+                            </div>
+
+                            <div data-testid="month" class="w-[45%]">
+                              <div class="">
+                                <div class="pb-[8px] text-sm">
+                                  <label for="month" class="">Month</label>
+                                </div>
+                                <div
+                                  class="flex items-center border border-[#878787] rounded-[3px] bg-white text-[#878787] text-[18px] py-[0]"
+                                >
+                                  <select
+                                    id="month"
+                                    name="month"
+                                    required=""
+                                    aria-invalid="false"
+                                    class="w-full bg-white px-[14px] mr-[14px] py-[16px]"
+                                  >
+                                    <option selected="" disabled="" value="">
+                                      Month
+                                    </option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div data-testid="year" class="w-[25%]">
+                              <div class="">
+                                <div class="pb-[8px] text-sm">
+                                  <label for="year" class="">Year</label>
+                                </div>
+                                <input
+                                  type="text"
+                                  aria-invalid="false"
+                                  id="year"
+                                  inputmode="numeric"
+                                  maxlength="4"
+                                  name="year"
+                                  pattern="(19[0-9]{2})|(200)[0-6]"
+                                  placeholder="YYYY"
+                                  required=""
+                                  value=""
+                                  class="w-full p-[14px] border border-[#878787] text-[#878787] rounded-[4px]"
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
+
+                        <!-- Gender -->
+
+                        <fieldset role="radiogroup" class="pb-[24px]">
+                          <legend
+                            class="flex justify-between text-sm pb-[8px] w-full items-center"
+                          >
+                            What's your gender?
+                          </legend>
+                          <div
+                            class="flex flex-wrap text-sm items-center font-['Circular1'] font-bold"
+                          >
+                            <div
+                              class="flex items-center py-[4px] min-h-[32px]"
+                            >
+                              <input
+                                type="radio"
+                                id="gender_option_male"
+                                name="gender"
+                                required=""
+                                value="male"
+                                aria-invalid="false"
+                                class=""
+                              /><label for="gender_option_male" class=""
+                                ><span class=""></span
+                                ><span class="pl-[12px] pr-[24px]"
+                                  >Male</span
+                                ></label
+                              >
+                            </div>
+                            <div
+                              class="flex items-center py-[4px] min-h-[32px]"
+                            >
+                              <input
+                                type="radio"
+                                id="gender_option_female"
+                                name="gender"
+                                required=""
+                                value="female"
+                                aria-invalid="false"
+                                class=""
+                              /><label for="gender_option_female" class=""
+                                ><span class=""></span
+                                ><span class="pl-[12px] pr-[24px]"
+                                  >Female</span
+                                ></label
+                              >
+                            </div>
+                            <div
+                              class="flex items-center py-[4px] min-h-[32px]"
+                            >
+                              <input
+                                type="radio"
+                                id="gender_option_nonbinary"
+                                name="gender"
+                                required=""
+                                value="neutral"
+                                aria-invalid="false"
+                                class=""
+                              /><label for="gender_option_nonbinary" class=""
+                                ><span class=""></span
+                                ><span class="pl-[12px] pr-[24px]"
+                                  >Non-binary</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </fieldset>
+
+                        <!-- Newsletter -->
+
+                        <div
+                          class="pb-[24px] text-sm font-['Circular1'] font-bold"
+                        >
+                          <div class="flex relative min-h-[32px] py-[4px]">
+                            <input
+                              type="checkbox"
+                              id="marketing-opt-checkbox"
+                              name="marketing"
+                              class=""
+                              style="width: 16px; height: 16px"
+                            /><label
+                              for="marketing-opt-checkbox"
+                              class="flex relative"
+                              ><span
+                                class="inline-block shrink-0 self-start top-0"
+                              ></span
+                              ><span
+                                class="relative -top-[2px] pl-[12px] pr-[24px]"
+                                >Please send me news and offers from
+                                Spotify</span
+                              ></label
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="pb-[24px] text-sm font-['Circular1'] font-bold"
+                        >
+                          <div class="flex relative min-h-[32px] py-[4px]">
+                            <input
+                              type="checkbox"
+                              id="marketing-opt-checkbox"
+                              name="marketing"
+                              class="block shrink-0"
+                              style="width: 16px; height: 16px"
+                            />
+                            <label
+                              for="marketing-opt-checkbox"
+                              class="flex relative"
+                              ><span
+                                class="inline-block shrink-0 self-start top-0"
+                              ></span
+                              ><span
+                                class="relative -top-[2px] pl-[12px] pr-[24px]"
+                                >Share my registration data with Spotify's
+                                content providers for marketing purposes. Note
+                                that your data may be transferred to a country
+                                outside of the EEA as described in our privacy
+                                policy.</span
+                              >
+                            </label>
+                          </div>
+                        </div>
+
+                        <div
+                          class="pb-[24px] text-sm font-['Circular1'] font-bold"
+                        >
+                          <div class="flex relative min-h-[32px] py-[4px]">
+                            <input
+                              type="checkbox"
+                              id="marketing-opt-checkbox"
+                              name="marketing"
+                              class="block shrink-0"
+                              style="width: 16px; height: 16px"
+                            />
+                            <label
+                              for="marketing-opt-checkbox"
+                              class="flex relative"
+                              ><span
+                                class="inline-block shrink-0 self-start top-0"
+                              ></span
+                              ><span
+                                class="relative -top-[2px] pl-[12px] pr-[24px]"
+                                >I hereby agree to the
+                                <a
+                                  class="text-[rgb(29_185_84)] underline"
+                                  href="/de/legal/end-user-agreement/"
+                                  target="_blank"
+                                  >Terms of Service</a
+                                >
+                                and consent to the collection, processing and
+                                use of my personal data, as described in more
+                                detail in the
+                                <a
+                                  class="text-[rgb(29_185_84)] underline"
+                                  href="/de/legal/privacy-policy/"
+                                  target="_blank"
+                                  >Privacy Statement</a
+                                >.</span
+                              >
+                            </label>
+                          </div>
+                        </div>
+
+                        <!-- Not a robot -->
+                        <!-- Button -->
+                        <!-- Log in -->
                         <button
                           class="mt-3 text-lg font-semibold bg-gray-800 w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:text-white hover:bg-black"
                         >
@@ -389,62 +648,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div
-          class="bg-white rounded-lg shadow sm:max-w-md sm:w-full sm:mx-auto sm:overflow-hidden"
-        >
-          <div class="px-4 py-8 sm:px-10">
-            <div class="mt-6">
-              <div class="w-full space-y-6">
-                <div class="w-full">
-                  <div class="relative">
-                    <input
-                      type="text"
-                      id="search-form-price"
-                      class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                      placeholder="Your price"
-                    />
-                  </div>
-                </div>
-                <div class="w-full">
-                  <div class="relative">
-                    <input
-                      type="text"
-                      id="search-form-location"
-                      class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                      placeholder="Your location"
-                    />
-                  </div>
-                </div>
-                <div class="w-full">
-                  <div class="relative">
-                    <input
-                      type="text"
-                      id="search-form-name"
-                      class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                      placeholder="Your name"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <span class="block w-full rounded-md shadow-sm">
-                    <button
-                      type="button"
-                      class="py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
-                    >
-                      Search
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="px-4 py-6 border-t-2 border-gray-200 bg-gray-50 sm:px-10">
-            <p class="text-xs leading-5 text-gray-500">
-              This data are display for information and can change
-            </p>
-          </div>
-        </div> -->
 
         <!-- Form -->
         <!-- <form novalidate="" method="POST">
@@ -605,50 +808,7 @@
             </div>
             <div data-testid="dob-error-messages-parent"></div>
           </div>
-          <fieldset role="radiogroup" class="">
-            <legend class="">What's your gender?</legend>
-            <div class="">
-              <div class="">
-                <input
-                  type="radio"
-                  id="gender_option_male"
-                  name="gender"
-                  required=""
-                  value="male"
-                  aria-invalid="false"
-                  class=""
-                /><label for="gender_option_male" class=""
-                  ><span class=""></span><span class="">Male</span></label
-                >
-              </div>
-              <div class="">
-                <input
-                  type="radio"
-                  id="gender_option_female"
-                  name="gender"
-                  required=""
-                  value="female"
-                  aria-invalid="false"
-                  class=""
-                /><label for="gender_option_female" class=""
-                  ><span class=""></span><span class="">Female</span></label
-                >
-              </div>
-              <div class="">
-                <input
-                  type="radio"
-                  id="gender_option_nonbinary"
-                  name="gender"
-                  required=""
-                  value="neutral"
-                  aria-invalid="false"
-                  class=""
-                /><label for="gender_option_nonbinary" class=""
-                  ><span class=""></span><span class="">Non-binary</span></label
-                >
-              </div>
-            </div>
-          </fieldset>
+          
           <div class="">
             <div class="">
               <input
