@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Register</title>
+    <title>Sign up - Spotify</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="../src/scss/pages/anmelden.html" />
     <link rel="stylesheet" href="../src/scss/pages/herunterladen.html" />
@@ -92,11 +92,13 @@
   <body class="font-['Circular']">
     <div class="">
       <!-- Main Container -->
-      <div class="px-[24px] max-w-[450px] mx-auto pb-[130px]">
+      <div class="px-[24px] md:px-[0] max-w-[450px] mx-auto pb-[130px]">
         <!-- Logo -->
-        <div class="pt-[32px] pb-[28px] flex flex-col">
+        <div
+          class="pt-[32px] pb-[28px] md:pt-[40px] md:pb-[32px] flex flex-col"
+        >
           <a class="mx-auto">
-            <svg role="img" viewBox="0 0 78 24" class="h-[27px]">
+            <svg role="img" viewBox="0 0 78 24" class="h-[27px] lg:h-[40px]">
               <path
                 d="M18.616 10.639c-3.77-2.297-9.99-2.509-13.59-1.388a1.077 1.077 0 0 1-1.164-.363 1.14 1.14 0 0 1-.119-1.237c.136-.262.37-.46.648-.548 4.132-1.287 11-1.038 15.342 1.605a1.138 1.138 0 0 1 .099 1.863 1.081 1.081 0 0 1-.813.213c-.142-.02-.28-.07-.403-.145Zm-.124 3.402a.915.915 0 0 1-.563.42.894.894 0 0 1-.69-.112c-3.144-1.983-7.937-2.557-11.657-1.398a.898.898 0 0 1-.971-.303.952.952 0 0 1-.098-1.03.929.929 0 0 1 .54-.458c4.248-1.323 9.53-.682 13.14 1.595a.95.95 0 0 1 .3 1.286Zm-1.43 3.267a.73.73 0 0 1-.45.338.712.712 0 0 1-.553-.089c-2.748-1.722-6.204-2.111-10.276-1.156a.718.718 0 0 1-.758-.298.745.745 0 0 1-.115-.265.757.757 0 0 1 .092-.563.737.737 0 0 1 .457-.333c4.455-1.045 8.277-.595 11.361 1.338a.762.762 0 0 1 .241 1.028ZM11.696 0C5.237 0 0 5.373 0 12c0 6.628 5.236 12 11.697 12 6.46 0 11.698-5.372 11.698-12 0-6.627-5.238-12-11.699-12h.001Zm20.126 11.078c-2.019-.494-2.379-.84-2.379-1.57 0-.688.633-1.151 1.572-1.151.91 0 1.814.352 2.76 1.076a.131.131 0 0 0 .187-.03l.987-1.426a.139.139 0 0 0-.025-.185c-1.127-.928-2.396-1.378-3.88-1.378-2.18 0-3.703 1.342-3.703 3.263 0 2.06 1.315 2.788 3.585 3.352 1.932.457 2.258.84 2.258 1.524 0 .757-.659 1.229-1.72 1.229-1.18 0-2.141-.408-3.216-1.364a.13.13 0 0 0-.188.016l-1.106 1.35a.137.137 0 0 0 .013.188c1.252 1.147 2.79 1.752 4.451 1.752 2.35 0 3.869-1.317 3.869-3.356 0-1.723-1.003-2.676-3.465-3.29Zm10.487 2.31c0 1.454-.874 2.47-2.125 2.47-1.235 0-2.169-1.061-2.169-2.47 0-1.41.933-2.47 2.17-2.47 1.23 0 2.124 1.038 2.124 2.47Zm-1.706-4.354c-1.018 0-1.854.412-2.543 1.256v-.95a.136.136 0 0 0-.038-.095.132.132 0 0 0-.093-.04h-1.81a.131.131 0 0 0-.093.04.136.136 0 0 0-.039.096v10.546c0 .076.06.137.133.137h1.809a.132.132 0 0 0 .093-.041.136.136 0 0 0 .038-.096v-3.329c.69.794 1.525 1.18 2.543 1.18 1.893 0 3.808-1.494 3.808-4.35 0-2.858-1.915-4.354-3.808-4.354Zm8.72 6.839c-1.297 0-2.274-1.068-2.274-2.486 0-1.422.943-2.455 2.244-2.455 1.305 0 2.288 1.069 2.288 2.487 0 1.422-.949 2.454-2.258 2.454Zm0-6.838c-2.438 0-4.347 1.926-4.347 4.383 0 2.432 1.896 4.338 4.317 4.338 2.445 0 4.36-1.92 4.36-4.369 0-2.44-1.901-4.353-4.33-4.353Zm9.535.17h-1.99V7.117a.136.136 0 0 0-.08-.126.13.13 0 0 0-.052-.01h-1.809a.133.133 0 0 0-.093.04.136.136 0 0 0-.038.095v2.087h-.87a.131.131 0 0 0-.122.085.139.139 0 0 0-.01.052v1.595c0 .074.06.135.132.135h.87v4.126c0 1.667.809 2.513 2.404 2.513.648 0 1.186-.138 1.694-.434a.135.135 0 0 0 .067-.117V15.64a.137.137 0 0 0-.063-.115.13.13 0 0 0-.129-.006c-.349.18-.685.263-1.061.263-.58 0-.84-.271-.84-.876V11.07h1.99a.13.13 0 0 0 .094-.04.136.136 0 0 0 .039-.096V9.339a.137.137 0 0 0-.039-.096.132.132 0 0 0-.094-.04v.001Zm6.934.007v-.255c0-.755.281-1.092.914-1.092.376 0 .68.077 1.019.194a.13.13 0 0 0 .118-.02.135.135 0 0 0 .056-.11V6.365a.137.137 0 0 0-.026-.081.133.133 0 0 0-.068-.05 4.852 4.852 0 0 0-1.502-.22c-1.67 0-2.554.965-2.554 2.788v.393h-.87a.132.132 0 0 0-.093.04.136.136 0 0 0-.038.096v1.603c0 .075.059.136.132.136h.87v6.364c0 .075.058.135.131.135h1.809c.072 0 .131-.06.131-.135V11.07h1.69l2.586 6.362c-.294.669-.583.802-.977.802-.319 0-.654-.098-.998-.29a.133.133 0 0 0-.105-.01.135.135 0 0 0-.078.072l-.612 1.38a.137.137 0 0 0 .056.175 3.733 3.733 0 0 0 1.932.508c1.334 0 2.073-.638 2.724-2.355l3.137-8.317a.14.14 0 0 0-.014-.126.131.131 0 0 0-.108-.06h-1.883a.132.132 0 0 0-.126.092l-1.928 5.651L69.006 9.3a.133.133 0 0 0-.124-.088h-3.09v.001Zm-4.02-.008h-1.809a.132.132 0 0 0-.093.041.136.136 0 0 0-.038.096v8.094c0 .075.06.135.132.135h1.809c.072 0 .131-.06.131-.135V9.34a.136.136 0 0 0-.038-.096.133.133 0 0 0-.094-.04Zm-.896-3.685a1.295 1.295 0 0 0-.919.393c-.243.25-.379.586-.377.937a1.342 1.342 0 0 0 .377.938 1.304 1.304 0 0 0 .92.393c.346-.002.677-.143.92-.393s.379-.587.377-.938c0-.735-.581-1.33-1.296-1.33h-.002Zm15.918 4.49h-.331v.434h.331c.165 0 .264-.083.264-.216 0-.142-.099-.217-.264-.217Zm.215.619.36.517h-.304l-.323-.474h-.279v.474h-.254v-1.37h.595c.31 0 .515.163.515.436a.412.412 0 0 1-.31.417Zm-.282-1.31c-.652 0-1.146.532-1.146 1.183 0 .65.49 1.175 1.139 1.175.652 0 1.147-.532 1.147-1.183 0-.65-.492-1.174-1.14-1.174Zm-.007 2.488a1.259 1.259 0 0 1-.904-.384 1.296 1.296 0 0 1-.368-.92c0-.717.563-1.314 1.279-1.314a1.259 1.259 0 0 1 .903.384 1.295 1.295 0 0 1 .369.921c0 .717-.563 1.314-1.279 1.314Z"
               ></path>
@@ -106,7 +108,7 @@
         <!-- Facebook Button -->
 
         <div
-          class="active:outline outline-offset-2 outline-[rgb(85_26_139)] w-fit mx-auto rounded-full mb-[18px] hover:scale-105"
+          class="active:outline outline-offset-2 outline-[rgb(85_26_139)] w-fit mx-auto rounded-full mb-[18px] md:mb-[22px] hover:scale-105"
         >
           <a
             href="https://accounts.spotify.com/de/login?method=facebook&amp;continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F&amp;intent=signup"
@@ -114,7 +116,7 @@
           >
             <div class="flex items-center">
               <button
-                class="bg-[#405A93] hover:bg-[#384f81] text-white py-[6px] px-[24px] rounded-full font-['Circular3'] leading-tight flex justify-center items-center w-[312px]"
+                class="bg-[#405A93] hover:bg-[#384f81] text-white py-[6px] px-[24px] rounded-full font-['Circular3'] leading-tight flex justify-center items-center w-[312px] lg:w-[394px]"
               >
                 <div class="pr-[16px] py-[4.5px]">
                   <svg
@@ -155,7 +157,7 @@
         <!-- Google Button -->
 
         <div
-          class="active:outline outline-offset-2 outline-black w-fit mx-auto rounded-full mb-[18px] hover:scale-105"
+          class="active:outline outline-offset-2 outline-black w-fit mx-auto rounded-full mb-[18px] md:mb-[22px] hover:scale-105"
         >
           <a
             href="https://accounts.spotify.com/de/login?method=facebook&amp;continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F&amp;intent=signup"
@@ -163,7 +165,7 @@
           >
             <div class="flex items-center">
               <button
-                class="bg-white text-[#535353] py-[6px] px-[24px] rounded-full border-[2px] border-[rgb(83_83_83)] font-['Circular3'] leading-tight flex justify-center items-center w-[312px]"
+                class="bg-white text-[#535353] py-[6px] px-[24px] rounded-full border-[2px] border-[rgb(83_83_83)] font-['Circular3'] leading-tight flex justify-center items-center w-[312px] lg:w-[394px]"
               >
                 <div class="pr-[16px] py-[4.5px]">
                   <svg
@@ -222,13 +224,12 @@
 
         <!-- Form -->
 
-        <!-- component -->
         <script
           src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
           defer
         ></script>
 
-        <div class="max-w-full mx-auto font-['Circular2']">
+        <div class="max-w-full mx-auto font-['Circular3']">
           <div class="">
             <div class="">
               <div class="relative flex flex-wrap">
@@ -393,7 +394,11 @@
                             <div data-testid="day" class="w-[20%]">
                               <div class="">
                                 <div class="pb-[8px] text-sm">
-                                  <label for="day" class="">Day</label>
+                                  <label
+                                    for="day"
+                                    class="font-['Circular1'] font-semibold"
+                                    >Day</label
+                                  >
                                 </div>
                                 <input
                                   type="text"
@@ -406,25 +411,25 @@
                                   placeholder="DD"
                                   required=""
                                   value=""
-                                  class="w-full p-[14px] border border-[#878787] text-[#878787] rounded-[4px]"
+                                  class="w-full p-[14px] border border-[#878787] text-[#878787] rounded-[4px] font-['Circular1'] font-semibold"
                                 />
                               </div>
                             </div>
 
                             <div data-testid="month" class="w-[45%]">
-                              <div class="">
+                              <div class="font-['Circular1'] font-semibold">
                                 <div class="pb-[8px] text-sm">
                                   <label for="month" class="">Month</label>
                                 </div>
                                 <div
-                                  class="flex items-center border border-[#878787] rounded-[3px] bg-white text-[#878787] text-[18px] py-[0]"
+                                  class="flex items-center border border-[#878787] rounded-[3px] bg-white text-[#878787] text-[16px] py-[0]"
                                 >
                                   <select
                                     id="month"
                                     name="month"
                                     required=""
                                     aria-invalid="false"
-                                    class="w-full bg-white px-[14px] mr-[14px] py-[16px]"
+                                    class="w-full bg-white px-[14px] mr-[14px] py-[14px]"
                                   >
                                     <option selected="" disabled="" value="">
                                       Month
@@ -446,7 +451,7 @@
                               </div>
                             </div>
                             <div data-testid="year" class="w-[25%]">
-                              <div class="">
+                              <div class="font-['Circular1'] font-bold">
                                 <div class="pb-[8px] text-sm">
                                   <label for="year" class="">Year</label>
                                 </div>
@@ -633,13 +638,90 @@
                         </div>
 
                         <!-- Not a robot -->
+
+                        <div class="pb-[24px]">
+                          <div id="checkbox-container">
+                            <div style="width: 304px; height: 78px">
+                              <div>
+                                <iframe
+                                  class=""
+                                  title="reCAPTCHA"
+                                  src="https://www.google.com/recaptcha/enterprise/anchor?ar=2&amp;k=6LeO36obAAAAALSBZrY6RYM1hcAY7RLvpDDcJLy3&amp;co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&amp;hl=en&amp;v=4rwLQsl5N_ccppoTAwwwMrEN&amp;size=normal&amp;cb=z36vj1n0psfk"
+                                  width="304"
+                                  height="78"
+                                  role="presentation"
+                                  name="a-urkt3whbf1o1"
+                                  frameborder="0"
+                                  scrolling="no"
+                                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                                ></iframe>
+                              </div>
+                              <textarea
+                                id="g-recaptcha-response"
+                                name="g-recaptcha-response"
+                                class=""
+                                style="
+                                  width: 250px;
+                                  height: 40px;
+                                  border: 1px solid rgb(193, 193, 193);
+                                  margin: 10px 25px;
+                                  padding: 0px;
+                                  resize: none;
+                                  display: none;
+                                "
+                              ></textarea>
+                            </div>
+                            <iframe style="display: none"></iframe>
+                          </div>
+                          <input
+                            type="text"
+                            hidden=""
+                            name="recaptchaCheckbox"
+                            required=""
+                            data-testid="recaptcha-input-test"
+                            value=""
+                          />
+                        </div>
+
                         <!-- Button -->
-                        <!-- Log in -->
+
+                        <div>
+                          <div class="pb-[24px]">
+                            <div
+                              class="active:outline hover:outline-offset-[3px] hover:scale-105 outline-black mx-auto rounded-full w-fit bg-primary active:bg-[#169c46] hover:bg-[#1fdf64] hover:scale-105"
+                            >
+                              <a href="#">
+                                <div class="flex">
+                                  <button
+                                    type="submit"
+                                    class="text-black py-[16px] px-[48px] rounded-full font-['Circular3'] leading-tight flex justify-center items-center"
+                                  >
+                                    Sign up
+                                  </button>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+
+                          <!-- Log in -->
+                          <p class="text-center pb-[16px]">
+                            <span class="font-['Circular1'] font-semibold"
+                              >Have an account?
+                              <a
+                                class="text-[rgb(29_185_84)] underline"
+                                href="https://accounts.spotify.com?continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F"
+                                >Log in</a
+                              >.</span
+                            >
+                          </p>
+                        </div>
+
+                        <!--                         
                         <button
-                          class="mt-3 text-lg font-semibold bg-gray-800 w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:text-white hover:bg-black"
+                          class="text-lg font-semibold bg-gray-800 w-full text-white rounded-lg px-6 py-3 block shadow-xl hover:text-white hover:bg-black"
                         >
                           Login
-                        </button>
+                        </button> -->
                       </div>
                     </form>
                   </div>
@@ -648,288 +730,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Form -->
-        <!-- <form novalidate="" method="POST">
-          <h2 class="">Sign up with your email address</h2>
-          <div class="">
-            <div class="">
-              <label for="email" class="">What's your email?</label>
-            </div>
-            <input
-              type="email"
-              aria-invalid="false"
-              id="email"
-              name="email"
-              placeholder="Enter your email."
-              required=""
-              value=""
-              class=""
-            />
-          </div>
-          <div class="">
-            <div class="">
-              <label for="confirm" class="">Confirm your email</label>
-            </div>
-            <input
-              type="email"
-              aria-invalid="false"
-              id="confirm"
-              name="confirm"
-              pattern=""
-              placeholder="Enter your email again."
-              required=""
-              value=""
-              class=""
-            />
-          </div>
-          <div class="">
-            <div class="">
-              <label for="password" class="">Create a password</label>
-            </div>
-            <input
-              type="password"
-              aria-invalid="false"
-              autocomplete="new-password"
-              id="password"
-              pattern=".{8,}"
-              name="password"
-              placeholder="Create a password."
-              required=""
-              value=""
-              class=""
-            />
-          </div>
-          <div class="">
-            <div class="">
-              <label for="displayname" class="">What should we call you?</label>
-            </div>
-            <input
-              type="text"
-              aria-invalid="false"
-              id="displayname"
-              name="displayname"
-              placeholder="Enter a profile name."
-              required=""
-              value=""
-              class=""
-            />
-            <div class="">This appears on your profile.</div>
-          </div>
-          <div class="">
-            <div class="">
-              <label class="">What's your date of birth?</label>
-            </div>
-            <div data-testid="dob-parent" class="">
-              <div data-testid="day" class="">
-                <div class="">
-                  <div class="">
-                    <label for="day" class="">Day</label>
-                  </div>
-                  <input
-                    type="text"
-                    aria-invalid="false"
-                    id="day"
-                    inputmode="numeric"
-                    maxlength="2"
-                    name="day"
-                    pattern="((0?[1-9])|([12][0-9])|(3[01]))"
-                    placeholder="DD"
-                    required=""
-                    value=""
-                    class=""
-                  />
-                </div>
-              </div>
-              <div data-testid="month" class="">
-                <div class="">
-                  <div class="">
-                    <label for="month" class="">Month</label>
-                  </div>
-                  <div class="">
-                    <select
-                      id="month"
-                      name="month"
-                      required=""
-                      aria-invalid="false"
-                      class=""
-                    >
-                      <option selected="" disabled="" value="">Month</option>
-                      <option value="01">January</option>
-                      <option value="02">February</option>
-                      <option value="03">March</option>
-                      <option value="04">April</option>
-                      <option value="05">May</option>
-                      <option value="06">June</option>
-                      <option value="07">July</option>
-                      <option value="08">August</option>
-                      <option value="09">September</option>
-                      <option value="10">October</option>
-                      <option value="11">November</option>
-                      <option value="12">December</option></select
-                    ><svg
-                      role="img"
-                      focusable="false"
-                      height="16"
-                      width="16"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      class=""
-                    >
-                      <polyline
-                        points="20 8 12 17 4 8"
-                        fill="none"
-                        stroke="#181818"
-                      ></polyline>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div data-testid="year" class="">
-                <div class="">
-                  <div class="">
-                    <label for="year" class="">Year</label>
-                  </div>
-                  <input
-                    type="text"
-                    aria-invalid="false"
-                    id="year"
-                    inputmode="numeric"
-                    maxlength="4"
-                    name="year"
-                    pattern="(19[0-9]{2})|(200)[0-6]"
-                    placeholder="YYYY"
-                    required=""
-                    value=""
-                    class=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div data-testid="dob-error-messages-parent"></div>
-          </div>
-          
-          <div class="">
-            <div class="">
-              <input
-                type="checkbox"
-                id="marketing-opt-checkbox"
-                name="marketing"
-                class=""
-              /><label for="marketing-opt-checkbox" class="Label-cpoq-0 dsmGdr"
-                ><span class=""></span
-                ><span class=""
-                  >Please send me news and offers from Spotify</span
-                ></label
-              >
-            </div>
-          </div>
-          <div class="Group-u9bcx5-0 dstcKD">
-            <div class="">
-              <input
-                type="checkbox"
-                id="third-party-checkbox"
-                name="thirdParty"
-                class=""
-              /><label for="third-party-checkbox" class="Label-cpoq-0 dsmGdr"
-                ><span class=""></span
-                ><span class=""
-                  ><span class=""
-                    >Share my registration data with Spotify's content providers
-                    for marketing purposes. Note that your data may be
-                    transferred to a country outside of the EEA as described in
-                    our privacy policy.</span
-                  ></span
-                ></label
-              >
-            </div>
-          </div>
-          <div class="">
-            <div class="">
-              <input
-                type="checkbox"
-                id="terms-conditions-checkbox"
-                name="terms-conditions-checkbox"
-                required=""
-                class=""
-              /><label for="terms-conditions-checkbox" class=""
-                ><span class=""></span
-                ><span class=""
-                  ><span class=""
-                    >I hereby agree to the
-                    <a href="/de/legal/end-user-agreement/" target="_blank"
-                      >Terms of Service</a
-                    >
-                    and consent to the collection, processing and use of my
-                    personal data, as described in more detail in the
-                    <a href="/de/legal/privacy-policy/" target="_blank"
-                      >Privacy Statement</a
-                    >.</span
-                  ></span
-                ></label
-              >
-            </div>
-          </div>
-          <div class="">
-            <div id="checkbox-container">
-              <div style="width: 304px; height: 78px">
-                <div>
-                  <iframe
-                    title="reCAPTCHA"
-                    src="https://www.google.com/recaptcha/enterprise/anchor?ar=2&amp;k=6LeO36obAAAAALSBZrY6RYM1hcAY7RLvpDDcJLy3&amp;co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&amp;hl=en&amp;v=4rwLQsl5N_ccppoTAwwwMrEN&amp;size=normal&amp;cb=z36vj1n0psfk"
-                    width="304"
-                    height="78"
-                    role="presentation"
-                    name="a-urkt3whbf1o1"
-                    frameborder="0"
-                    scrolling="no"
-                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                  ></iframe>
-                </div>
-                <textarea
-                  id="g-recaptcha-response"
-                  name="g-recaptcha-response"
-                  class=""
-                  style="
-                    width: 250px;
-                    height: 40px;
-                    border: 1px solid rgb(193, 193, 193);
-                    margin: 10px 25px;
-                    padding: 0px;
-                    resize: none;
-                    display: none;
-                  "
-                ></textarea>
-              </div>
-              <iframe style="display: none"></iframe>
-            </div>
-            <input
-              type="text"
-              hidden=""
-              name="recaptchaCheckbox"
-              required=""
-              data-testid="recaptcha-input-test"
-              value=""
-            />
-          </div>
-          <div class="">
-            <div class="">
-              <button type="submit" class="">
-                <div class="">Sign up</div>
-                <div class=""></div>
-              </button>
-            </div>
-            <p class="">
-              <span class=""
-                >Have an account?
-                <a
-                  href="https://accounts.spotify.com?continue=https%3A%2F%2Fwww.spotify.com%2Faccount%2Foverview%2F"
-                  >Log in</a
-                >.</span
-              >
-            </p>
-          </div>
-        </form> -->
       </div>
     </div>
     <!-- component -->
