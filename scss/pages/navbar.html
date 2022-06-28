@@ -1,0 +1,156 @@
+<header>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <nav class="z-0 relative" x-data="{open:false,menu:false, lokasi:false}">
+    <div class="relative z-10 bg-black shadow">
+      <div class="py-0 max-w-[1170px] mx-auto">
+        <div
+          class="relative flex items-center h-[54px] lg:h-[80px] md:max-w-[750px] lg:max-w-[970px] xl:max-w-[1170px] mx-auto"
+        >
+          <div
+            class="flex items-center justify-between grow pl-[15px] pr-[0px] lg:pr-[15px] mx-auto"
+          >
+            <div>
+              <a class="flex-shrink-0" href="../../index.html">
+                <img
+                  class="block lg:hidden h-27 w-89"
+                  src="../../images/Spotify_Logo_RGB_White.png"
+                  alt="Logo"
+                />
+                <img
+                  class="hidden lg:block h-10 w-132"
+                  src="../../images/Spotify_Logo_RGB_White.png"
+                  alt="Logo"
+                />
+              </a>
+            </div>
+            <div class="hidden lg:block lg:ml-2">
+              <div class="flex items-center">
+                <a
+                  href="./premium.html"
+                  class="px-17 py-7 rounded-md text-base leading-5 text-white font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer"
+                >
+                  Premium
+                </a>
+                <a
+                  href="./support.html"
+                  class="px-17 py-7 rounded-md text-base leading-5 text-white font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer"
+                >
+                  Support
+                </a>
+                <a
+                  href="./herunterladen.html"
+                  class="px-17 py-7 rounded-md text-base leading-5 text-white font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer"
+                >
+                  Herunterladen
+                </a>
+                <a
+                  class="mx-17 my-7 bg-white h-[16px] w-[1px] rounded-md text-base leading-5 text-white font-bold"
+                ></a>
+                <a
+                  href="./register.html"
+                  class="px-17 py-7 rounded-md text-base leading-5 text-[#d9dadc] font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer"
+                >
+                  Registrieren
+                </a>
+
+                <a
+                  href="./anmelden.html"
+                  class="pl-17 py-7 rounded-md text-base leading-5 text-[#d9dadc] font-bold hover:text-primary transition duration-150 ease-in-out cursor-pointer"
+                >
+                  Anmelden
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex lg:hidden relative sm:pr-[7px]">
+            <button
+              @click="menu=!menu"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 transition duration-150 ease-in-out relative z-10"
+              aria-label="Main menu"
+              aria-expanded="false"
+            >
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="menu"
+              class="block bg-[rgba(0,0,0,.75)] w-[100vw] h-[100vh] left-0 fixed top-0"
+            ></div>
+            <div
+              x-show="menu"
+              class="block lg:hidden flex flex-col justify-between p-[38px] h-screen max-w-[100vw] w-[447px] bg-black fixed sm:md:lg:fixed top-[0rem] right-[0rem] sm:md:lg:right-0"
+            >
+              <div>
+                <a
+                  href="./premium.html"
+                  class="block pb-[25px] rounded-md text-white text-[36px] font-normal hover:text-primary transition duration-150 ease-in-out font-['Circular2']"
+                  >Premium
+                </a>
+                <a
+                  href="./support.html"
+                  class="block pb-[25px] rounded-md text-white text-[36px] hover:text-primary transition duration-150 ease-in-out font-['Circular2']"
+                  >Support
+                </a>
+                <a
+                  href="./herunterladen.html"
+                  class="block pb-[25px] rounded-md text-white text-[36px] hover:text-primary transition duration-150 ease-in-out font-['Circular2']"
+                  >Herunterladen
+                </a>
+                <p
+                  class="mt-[18px] mb-[40px] bg-white h-[2px] w-[20px] block rounded-md text-white text-[12px] transition duration-150 ease-in-out"
+                ></p>
+                <a
+                  href="./register.html"
+                  class="block pb-[25px] rounded-md text-third font-bold text-[28px] hover:text-primary transition duration-150 ease-in-out font-['Circular1']"
+                  >Registrieren
+                </a>
+
+                <a
+                  href="./anmelden.html"
+                  class="block pb-[25px] rounded-md text-third text-[28px] font-bold hover:text-primary transition duration-150 ease-in-out font-['Circular1']"
+                  >Anmelden
+                </a>
+              </div>
+              <div class="mt-[13px]">
+                <a class="flex-shrink-0" href="#">
+                  <img
+                    class="block lg:hidden h-27 w-89"
+                    src="../../images/Spotify_Logo_RGB_White.png"
+                    alt="Logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
