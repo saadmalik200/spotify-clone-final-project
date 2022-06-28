@@ -2,7 +2,7 @@
 
 ## Link
 
-- Live Site URL: []()
+- Live Site URL: [https://saadmalik200.github.io/spotify-clone-final-project/](https://saadmalik200.github.io/spotify-clone-final-project/)
 
 ## Table of contents
 
