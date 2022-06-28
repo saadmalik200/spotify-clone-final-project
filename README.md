@@ -32,31 +32,31 @@
 
 - Create a responsive page based on the screenshots using flex and media queries
 
--Notice:
+- Notice:
 
-    -The navigation should also be fully responsive on all devices
+  - The navigation should also be fully responsive on all devices
 
 ### Screenshot
 
 #### Mobile Version
 
-![Mobile Layout](../spotify-clone-final-project/src/images/mobile-home.png)
+![Mobile Layout](./dist/images/mobile-home.png)
 
 #### Tablet Version
 
-![Tablet Layout](../spotify-clone-final-project/src/images/tablet-menu.png)
+![Tablet Layout](./dist/images/tablet-menu.png)
 
 #### Desktop Version
 
 - header
-  ![Desktop Layout](../spotify-clone-final-project/src/images/desktop1.png)
+  ![Desktop Layout](./dist/images/desktop1.png)
 
 - footer
-  ![Desktop Footer](../spotify-clone-final-project/src/images/footer.png)
+  ![Desktop Footer](./dist/images/footer.png)
 
 #### Register Page
 
-![Register Page](../spotify-clone-final-project/src/images/register.png)
+![Register Page](./dist/images/register.png)
 
 ## My process
 
