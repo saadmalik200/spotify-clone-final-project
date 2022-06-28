@@ -256,12 +256,12 @@
       > -->
       <div class="bg-cover">
         <div
-          class="bg-no-repeat bg-[100%] md:bg-[url('../../images/desktop.png')] bg-[url('../../images/mobile.png')] bg-[top] px-[8px] bg-[#052a56]"
+          class="bg-no-repeat bg-cover md:bg-[url('https://support.scdn.co/web/_next/static/assets/e0b55c2/search-desktop.webp')] bg-[url('https://support.scdn.co/web/_next/static/assets/e0b55c2/search-mobile.webp')] bg-[top] px-[8px] bg-[#052a56]"
         >
           <div
-            class="justify-center text-center pb-[24px] md:w-[744px] mx-auto"
+            class="justify-center text-center pb-[24px]  mx-auto"
           >
-            <div class="mx-auto">
+            <div class="mx-auto md:w-[744px]">
               <h1
                 class="md:text-[60px] text-[48px] -tracking-[0.1rem] md:pt-20 md:pb-10 py-[24px] px-[32px] md:px-0 font-bold text-white w-full leading-[3rem]"
               >
@@ -321,7 +321,7 @@
                     <a
                       class="text-white text-lg font-normal hover:underline"
                       href="#"
-                      >Ich kann mein Passwort nicht zurücksetzen</a
+                      >Ich kann mein Passwort nicht zurücksetzen.</a
                     >
                   </div>
                   <div
@@ -349,7 +349,7 @@
                     <a
                       class="text-white text-lg font-normal hover:underline"
                       href="#"
-                      >Ich habe meine Anmeldedaten vergessen</a
+                      >Ich habe meine Anmeldedaten vergessen.</a
                     >
                   </div>
                   <div
@@ -374,7 +374,7 @@
       </div>
 
       <!--  6cards  -->
-      <div>
+      <div class="lg:hidden ">
         <!-- component -->
         <style>
           .tab {
@@ -384,12 +384,10 @@
             max-height: 0;
             transition: all 0.5s;
           }
-          input:checked + .tab-label .test {
-            background-color: #000;
-          }
+        
           input:checked + .tab-label .test svg {
             transform: rotate(180deg);
-            stroke: #fff;
+            stroke: #000;
           }
           input:checked + .tab-label::after {
             transform: rotate(90deg);
@@ -410,14 +408,14 @@
                     id="chck1"
                   />
                   <header
-                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    class="flex justify-between items-center p-[16px] text-[18px] px-[16px] cursor-pointer select-none tab-label font-bold "
                     for="chck1"
                   >
-                    <span class="text-grey-darkest font-thin text-xl">
+                    <span class="text-grey-darkest md:text-[24px] text-[18px]">
                       Hilfe zu Zahlungen
                     </span>
                     <div
-                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                      class="border-black w-7 h-7 flex items-center justify-center test"
                     >
                       <!-- icon by feathericons.com -->
                       <svg
@@ -426,7 +424,7 @@
                         data-reactid="266"
                         fill="none"
                         height="24"
-                        stroke="#606F7B"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -438,12 +436,12 @@
                       </svg>
                     </div>
                   </header>
-                  <div class="tab-content">
-                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
-                      <ul class="pl-4">
-                        <li class="pb-2">Zahlungen verwalten</li>
-                        <li class="pb-2">Zahlungsmethoden</li>
-                        <li class="pb-2">Hilfe zur Abbuchung</li>
+                  <div class="tab-content bg-[#eee]">
+                    <div class="px-[16px] pt-[16px] text-[18px] text-[#117a37]">
+                      <ul class="font-bold">
+                        <li class="pb-[12px] ">Zahlungen verwalten</li>
+                        <li class="pb-[12px]">Zahlungsmethoden</li>
+                        <li class="pb-[12px]">Hilfe zur Abbuchung</li>
                       </ul>
                     </div>
                   </div>
@@ -457,10 +455,10 @@
                     id="chck2"
                   />
                   <header
-                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    class="flex justify-between items-center p-[16px] px-[16px]cursor-pointer select-none tab-label"
                     for="chck2"
                   >
-                    <span class="text-grey-darkest font-thin text-xl">
+                    <span class="text-grey-darkest font-bold md:text-[24px] text-[18px]">
                       Hilfe zum Abo
                     </span>
                     <div
@@ -473,7 +471,7 @@
                         data-reactid="266"
                         fill="none"
                         height="24"
-                        stroke="#606F7B"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -485,14 +483,14 @@
                       </svg>
                     </div>
                   </header>
-                  <div class="tab-content">
-                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
-                      <ul class="pl-4">
-                        <li class="pb-2">Verfügbare Abos</li>
-                        <li class="pb-2">Abo-Einstellungen</li>
-                        <li class="pb-2">Spotify Premium Family und Kids</li>
-                        <li class="pb-2">Premium Duo</li>
-                        <li class="pb-2">Premium Student</li>
+                  <div class="tab-content bg-[#eee]">
+                    <div class="px-[16px] pt-[16px] text-[18px] text-[#117a37]">
+                      <ul class="font-bold">
+                        <li class="pb-[12px]">Verfügbare Abos</li>
+                        <li class="pb-[12px]">Abo-Einstellungen</li>
+                        <li class="pb-[12px]">Spotify Premium Family und Kids</li>
+                        <li class="pb-[12px]">Premium Duo</li>
+                        <li class="pb-[12px]">Premium Student</li>
                       </ul>
                     </div>
                   </div>
@@ -506,10 +504,10 @@
                     id="chck2"
                   />
                   <header
-                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    class="flex justify-between items-center p-[16px] px-[16px]cursor-pointer select-none tab-label"
                     for="chck2"
                   >
-                    <span class="text-grey-darkest font-thin text-xl">
+                    <span class="text-grey-darkest font-bold md:text-[24px] text-[18px]">
                       Hilfe zur App
                     </span>
                     <div
@@ -522,7 +520,7 @@
                         data-reactid="266"
                         fill="none"
                         height="24"
-                        stroke="#606F7B"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -534,16 +532,16 @@
                       </svg>
                     </div>
                   </header>
-                  <div class="tab-content">
-                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
-                      <ul class="pl-4">
-                        <li class="pb-2">Erste Schritte</li>
-                        <li class="pb-2">App-Einstellungen</li>
-                        <li class="pb-2">Problembehebung</li>
-                        <li class="pb-2">Playlists</li>
-                        <li class="pb-2">Features</li>
-                        <li class="pb-2">Social-Media-Features</li>
-                        <li class="pb-2">Privatsphäre beim Hören</li>
+                  <div class="tab-content  bg-[#eee]">
+                    <div class="px-[16px] pt-[16px] text-[18px] text-[#117a37]">
+                      <ul class="font-bold">
+                        <li class="pb-[12px]">Erste Schritte</li>
+                        <li class="pb-[12px]">App-Einstellungen</li>
+                        <li class="pb-[12px]">Problembehebung</li>
+                        <li class="pb-[12px]">Playlists</li>
+                        <li class="pb-[12px]">Features</li>
+                        <li class="pb-[12px]">Social-Media-Features</li>
+                        <li class="pb-[12px]">Privatsphäre beim Hören</li>
                       </ul>
                     </div>
                   </div>
@@ -557,10 +555,10 @@
                     id="chck2"
                   />
                   <header
-                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    class="flex justify-between items-center p-[16px] px-[16px]cursor-pointer select-none tab-label"
                     for="chck2"
                   >
-                    <span class="text-grey-darkest font-thin text-xl">
+                    <span class="text-grey-darkest font-bold md:text-[24px] text-[18px]">
                       Hilfe zu Geräten
                     </span>
                     <div
@@ -573,7 +571,7 @@
                         data-reactid="266"
                         fill="none"
                         height="24"
-                        stroke="#606F7B"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -585,15 +583,15 @@
                       </svg>
                     </div>
                   </header>
-                  <div class="tab-content">
-                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
-                      <ul class="pl-4">
-                        <li class="pb-2">Lautsprecher</li>
-                        <li class="pb-2">Smartwatches</li>
-                        <li class="pb-2">Fernseher</li>
-                        <li class="pb-2">Gaming</li>
-                        <li class="pb-2">Autos</li>
-                        <li class="pb-2">Voice-Assistenten</li>
+                  <div class="tab-content bg-[#eee]">
+                    <div class="px-[16px] pt-[16px] text-[18px] text-[#117a37]">
+                      <ul class="font-bold">
+                        <li class="pb-[12px]">Lautsprecher</li>
+                        <li class="pb-[12px]">Smartwatches</li>
+                        <li class="pb-[12px]">Fernseher</li>
+                        <li class="pb-[12px]">Gaming</li>
+                        <li class="pb-[12px]">Autos</li>
+                        <li class="pb-[12px]">Voice-Assistenten</li>
                       </ul>
                     </div>
                   </div>
@@ -607,10 +605,10 @@
                     id="chck2"
                   />
                   <header
-                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    class="flex justify-between items-center p-[16px] px-[16px]cursor-pointer select-none tab-label"
                     for="chck2"
                   >
-                    <span class="text-grey-darkest font-thin text-xl">
+                    <span class="text-grey-darkest font-bold md:text-[24px] text-[18px]">
                       Sicherheit und Datenschutz
                     </span>
                     <div
@@ -623,7 +621,7 @@
                         data-reactid="266"
                         fill="none"
                         height="24"
-                        stroke="#606F7B"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -635,14 +633,14 @@
                       </svg>
                     </div>
                   </header>
-                  <div class="tab-content">
-                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
-                      <ul class="pl-4">
-                        <li class="pb-2">
+                  <div class="tab-content bg-[#eee]">
+                    <div class="px-[16px] pt-[16px] text-[18px] text-[#117a37]">
+                      <ul class="font-bold">
+                        <li class="pb-[12px]">
                           Infos zu Datenschutz und Privatsphäre
                         </li>
-                        <li class="pb-2">Plattformregeln</li>
-                        <li class="pb-2">Maßnahmen in Bezug auf Inhalte</li>
+                        <li class="pb-[12px]">Plattformregeln</li>
+                        <li class="pb-[12px]">Maßnahmen in Bezug auf Inhalte</li>
                       </ul>
                     </div>
                   </div>
@@ -657,10 +655,10 @@
                     id="chck3"
                   />
                   <header
-                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    class="flex justify-between items-center p-[16px] px-[16px]cursor-pointer select-none tab-label"
                     for="chck3"
                   >
-                    <span class="text-grey-darkest font-thin text-xl">
+                    <span class="text-grey-darkest font-bold md:text-[24px] text-[18px]">
                       Hilfe-Konto
                     </span>
                     <div
@@ -673,7 +671,7 @@
                         data-reactid="266"
                         fill="none"
                         height="24"
-                        stroke="#606F7B"
+                        stroke="#000"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
@@ -685,13 +683,13 @@
                       </svg>
                     </div>
                   </header>
-                  <div class="tab-content">
-                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
-                      <ul class="pl-4">
-                        <li class="pb-2">Anmelden</li>
-                        <li class="pb-2">Hilfe zum Profil</li>
-                        <li class="pb-2">Kontoeinstellungen</li>
-                        <li class="pb-2">Sicherheit</li>
+                  <div class="tab-content bg-[#eee]">
+                    <div class="px-[16px] pt-[16px] text-[18px] text-[#117a37]">
+                      <ul class="font-bold">
+                        <li class="pb-[12px]">Anmelden</li>
+                        <li class="pb-[12px]">Hilfe zum Profil</li>
+                        <li class="pb-[12px]">Kontoeinstellungen</li>
+                        <li class="pb-[12px]">Sicherheit</li>
                       </ul>
                     </div>
                   </div>
