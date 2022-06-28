@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Support</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+
+            md: "768px",
+
+            lg: "992px",
+
+            xl: "1200px",
+          },
+        },
+      };
+    </script>
     <style>
       *,
       *::after,
@@ -19,6 +34,7 @@
       }
     </style>
   </head>
+
   <body>
     <header>
       <script src="//unpkg.com/alpinejs" defer></script>
@@ -167,7 +183,668 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="font-[Helvetica,Arial,sans-serif] min-h-[600px]">
+      <!-- <div
+        class="hidden md:block bg-cover bg-no-repeat md:block md:w-3/3 h-[443px]80"
+        style="
+          
+        "
+      > -->
+      <div class="bg-cover">
+        <div
+          class="bg-no-repeat bg-[100%] md:bg-[url('../../images/desktop.png')] bg-[url('../../images/mobile.png')] bg-[top] px-[8px] bg-[#052a56]"
+        >
+          <div
+            class="justify-center text-center pb-[24px] md:w-[744px] mx-auto"
+          >
+            <div class="mx-auto">
+              <h1
+                class="md:text-[60px] text-[48px] -tracking-[0.1rem] md:pt-20 md:pb-10 py-[24px] px-[32px] md:px-0 font-bold text-white w-full leading-[3rem]"
+              >
+                Wie können wir dir helfen?
+              </h1>
+              <!-- form -->
+              <form methode="get" action="#" class="relative mb-6 z-50">
+                <button
+                  type="submit"
+                  id="searchsubmit"
+                  class="absolute inset-y-0 left-1 -top-[2.75rem] pl-2 pt-11 items-center pointer-events-none w-[full]"
+                >
+                  <svg
+                    role="img"
+                    height="24"
+                    width="24"
+                    class="Svg-sc-1bi12j5-0 fFVwGH Search_formInputIcon__UFrWJ"
+                    aria-label="Suchen icon"
+                    viewBox="0 0 24 24"
+                    style="fill: rgb(99, 98, 98)"
+                  >
+                    <path
+                      d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"
+                    ></path>
+                  </svg>
+                </button>
+                <input
+                  type="text"
+                  name="s"
+                  id="s"
+                  class="w-full pl-[48px] py-[10px] border border-transparent rounded-[4px] leading-5 bg-white outline-none text-gray-500 sm:text-base transition duration-150 ease-in-out placeholder-[rgb(99_98_98)] placeholder-bold"
+                  placeholder="Suchen"
+                />
+              </form>
+            </div>
+            <!-- 4cards -->
+            <div
+              class="flex lg:justify-center lg:text-center justify-start items-center text-left pt-[10px] pb-[30px] lg:pt-[30px] lg:pb-10"
+            >
+              <div class="max-w-[744px] lg:max-w-none lg:mx-auto">
+                <div
+                  class="grid justify-start grid-cols-1 lg:grid-cols-4 lg:max-w-[992px]"
+                >
+                  <div
+                    class="items-center col-span-1 md:col-span-2 lg:col-span-1 mb-[15px]"
+                  >
+                    <p
+                      class="lg:hidden text-slate-300 tracking-[0.1rem] my-2 text-xs uppercase"
+                    >
+                      Top-Lösungen
+                    </p>
+                    <p
+                      class="hidden lg:block text-slate-300 tracking-[0.1rem] my-2 text-xs"
+                    >
+                      ANMELDEN
+                    </p>
+                    <a
+                      class="text-white text-lg font-normal hover:underline"
+                      href="#"
+                      >Ich kann mein Passwort nicht zurücksetzen</a
+                    >
+                  </div>
+                  <div
+                    class="items-center justify-center col-span-1 md:col-span-2 lg:col-span-1 mb-[15px]"
+                  >
+                    <p
+                      class="hidden lg:block text-slate-300 tracking-[0.1rem] my-2 text-xs"
+                    >
+                      PROBLEMBEHEBUNG
+                    </p>
+                    <a
+                      class="text-white text-lg font-normal hover:underline"
+                      href="#"
+                      >Mit meinem Konto stimmt etwas nicht</a
+                    >
+                  </div>
+                  <div
+                    class="items-center justify-center col-span-1 md:col-span-2 lg:col-span-1 mb-[15px]"
+                  >
+                    <p
+                      class="hidden lg:block text-slate-300 tracking-[0.1rem] my-2 text-xs"
+                    >
+                      ANMELDEN
+                    </p>
+                    <a
+                      class="text-white text-lg font-normal hover:underline"
+                      href="#"
+                      >Ich habe meine Anmeldedaten vergessen</a
+                    >
+                  </div>
+                  <div
+                    class="items-center justify-center col-span-1 md:col-span-2 lg:col-span-1 mb-[15px]"
+                  >
+                    <p
+                      class="hidden lg:block text-slate-300 tracking-[0.1rem] my-2 text-xs"
+                    >
+                      ANMELDEN
+                    </p>
+                    <a
+                      class="text-white text-lg font-normal hover:underline"
+                      href="#"
+                      >Hilfe beim Anmelden mit Facebook</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  6cards  -->
+      <div>
+        <!-- component -->
+        <style>
+          .tab {
+            overflow: hidden;
+          }
+          .tab-content {
+            max-height: 0;
+            transition: all 0.5s;
+          }
+          input:checked + .tab-label .test {
+            background-color: #000;
+          }
+          input:checked + .tab-label .test svg {
+            transform: rotate(180deg);
+            stroke: #fff;
+          }
+          input:checked + .tab-label::after {
+            transform: rotate(90deg);
+          }
+          input:checked ~ .tab-content {
+            max-height: 100vh;
+          }
+        </style>
+
+        <main class="w-full">
+          <section class="shadow row">
+            <div class="tabs">
+              <div class="border-b tab">
+                <div class="border-l-2 border-transparent relative">
+                  <input
+                    class="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+                    type="checkbox"
+                    id="chck1"
+                  />
+                  <header
+                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    for="chck1"
+                  >
+                    <span class="text-grey-darkest font-thin text-xl">
+                      Hilfe zu Zahlungen
+                    </span>
+                    <div
+                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                    >
+                      <!-- icon by feathericons.com -->
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-reactid="266"
+                        fill="none"
+                        height="24"
+                        stroke="#606F7B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </header>
+                  <div class="tab-content">
+                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                      <ul class="pl-4">
+                        <li class="pb-2">Zahlungen verwalten</li>
+                        <li class="pb-2">Zahlungsmethoden</li>
+                        <li class="pb-2">Hilfe zur Abbuchung</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-b tab">
+                <div class="border-l-2 border-transparent relative">
+                  <input
+                    class="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+                    type="checkbox"
+                    id="chck2"
+                  />
+                  <header
+                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    for="chck2"
+                  >
+                    <span class="text-grey-darkest font-thin text-xl">
+                      Hilfe zum Abo
+                    </span>
+                    <div
+                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                    >
+                      <!-- icon by feathericons.com -->
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-reactid="266"
+                        fill="none"
+                        height="24"
+                        stroke="#606F7B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </header>
+                  <div class="tab-content">
+                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                      <ul class="pl-4">
+                        <li class="pb-2">Verfügbare Abos</li>
+                        <li class="pb-2">Abo-Einstellungen</li>
+                        <li class="pb-2">Spotify Premium Family und Kids</li>
+                        <li class="pb-2">Premium Duo</li>
+                        <li class="pb-2">Premium Student</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-b tab">
+                <div class="border-l-2 border-transparent relative">
+                  <input
+                    class="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+                    type="checkbox"
+                    id="chck2"
+                  />
+                  <header
+                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    for="chck2"
+                  >
+                    <span class="text-grey-darkest font-thin text-xl">
+                      Hilfe zur App
+                    </span>
+                    <div
+                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                    >
+                      <!-- icon by feathericons.com -->
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-reactid="266"
+                        fill="none"
+                        height="24"
+                        stroke="#606F7B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </header>
+                  <div class="tab-content">
+                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                      <ul class="pl-4">
+                        <li class="pb-2">Erste Schritte</li>
+                        <li class="pb-2">App-Einstellungen</li>
+                        <li class="pb-2">Problembehebung</li>
+                        <li class="pb-2">Playlists</li>
+                        <li class="pb-2">Features</li>
+                        <li class="pb-2">Social-Media-Features</li>
+                        <li class="pb-2">Privatsphäre beim Hören</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-b tab">
+                <div class="border-l-2 border-transparent relative">
+                  <input
+                    class="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+                    type="checkbox"
+                    id="chck2"
+                  />
+                  <header
+                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    for="chck2"
+                  >
+                    <span class="text-grey-darkest font-thin text-xl">
+                      Hilfe zu Geräten
+                    </span>
+                    <div
+                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                    >
+                      <!-- icon by feathericons.com -->
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-reactid="266"
+                        fill="none"
+                        height="24"
+                        stroke="#606F7B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </header>
+                  <div class="tab-content">
+                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                      <ul class="pl-4">
+                        <li class="pb-2">Lautsprecher</li>
+                        <li class="pb-2">Smartwatches</li>
+                        <li class="pb-2">Fernseher</li>
+                        <li class="pb-2">Gaming</li>
+                        <li class="pb-2">Autos</li>
+                        <li class="pb-2">Voice-Assistenten</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-b tab">
+                <div class="border-l-2 border-transparent relative">
+                  <input
+                    class="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+                    type="checkbox"
+                    id="chck2"
+                  />
+                  <header
+                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    for="chck2"
+                  >
+                    <span class="text-grey-darkest font-thin text-xl">
+                      Sicherheit und Datenschutz
+                    </span>
+                    <div
+                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                    >
+                      <!-- icon by feathericons.com -->
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-reactid="266"
+                        fill="none"
+                        height="24"
+                        stroke="#606F7B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </header>
+                  <div class="tab-content">
+                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                      <ul class="pl-4">
+                        <li class="pb-2">
+                          Infos zu Datenschutz und Privatsphäre
+                        </li>
+                        <li class="pb-2">Plattformregeln</li>
+                        <li class="pb-2">Maßnahmen in Bezug auf Inhalte</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-b tab">
+                <div class="border-l-2 border-transparent relative">
+                  <input
+                    class="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+                    type="checkbox"
+                    id="chck3"
+                  />
+                  <header
+                    class="flex justify-between items-center p-5 pl-8 pr-8 cursor-pointer select-none tab-label"
+                    for="chck3"
+                  >
+                    <span class="text-grey-darkest font-thin text-xl">
+                      Hilfe-Konto
+                    </span>
+                    <div
+                      class="border-grey w-7 h-7 flex items-center justify-center test"
+                    >
+                      <!-- icon by feathericons.com -->
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-reactid="266"
+                        fill="none"
+                        height="24"
+                        stroke="#606F7B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewbox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </header>
+                  <div class="tab-content">
+                    <div class="pl-8 pr-8 pb-5 text-grey-darkest">
+                      <ul class="pl-4">
+                        <li class="pb-2">Anmelden</li>
+                        <li class="pb-2">Hilfe zum Profil</li>
+                        <li class="pb-2">Kontoeinstellungen</li>
+                        <li class="pb-2">Sicherheit</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <div class="hidden lg:block lg:w-3/3 pt-[30px] bg-[#eee]">
+        <div
+          class="justify-center items-center font-bold h-full mb-5 pb-5 background-color: rgb(255 255 255)"
+        >
+          <div class="flex items-center justify-center">
+            <div class="max-w-[992px] mx-auto sm:px-6 lg:px-2">
+              <div
+                class="grid grid-cols-2 items-start gap-x-[4rem] md:grid-cols-3 sm:grid-cols-1"
+              >
+                <div
+                  class="flex flex-col item-start justify-center p-2 mb-5 col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <p class="text-slate-300 py-4 text-2xl text-black">
+                    Hilfe zu Zahlungen
+                  </p>
+                  <a
+                    class="text-[#117a37] text-lg pt-4 pb-3 hover:underline"
+                    href="#"
+                    >Zahlungen verwalten</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Zahlungsmethoden</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Hilfe zur Abbuchung</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-start justify-center w-[18rem] p-2 mb-5 col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <p class="text-slate-300 text-2xl py-4 text-black">
+                    Hilfe zum Abo
+                  </p>
+                  <a
+                    class="text-[#117a37] text-lg pt-4 pb-3 hover:underline"
+                    href="#"
+                    >Verfügbare Abos</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Abo-Einstellungen</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Spotify Premium Family und Kids</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Premium Duo</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Premium Student</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-start justify-center p-2 mb-5 col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <p class="text-slate-300 py-4 text-2xl text-black">
+                    Hilfe zur App
+                  </p>
+                  <a
+                    class="text-[#117a37] text-lg pt-4 pb-3 hover:underline"
+                    href="#"
+                    >Erste Schritte</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >App-Einstellungen</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Problembehebung</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Playlists</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Features</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Social-Media-Features</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Privatsphäre beim Hören</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-start justify-center p-2 mb-5 col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <p class="text-slate-300 py-4 text-2xl text-black">
+                    Hilfe zu Geräten
+                  </p>
+                  <a
+                    class="text-[#117a37] text-lg pt-4 pb-3 hover:underline"
+                    href="#"
+                    >Lautsprecher</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Smartwatches</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Fernseher</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Gaming</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Autos</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Voice-Assistenten</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-start justify-center w-[18rem] p-2 mb-5 col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <p class="text-slate-300 py-4 text-2xl text-black">
+                    Sicherheit und Datenschutz
+                  </p>
+                  <a
+                    class="text-[#117a37] text-lg pt-4 pb-3 hover:underline"
+                    href="#"
+                    >Infos zu Datenschutz und Privatsphäre</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Plattformregeln</a
+                  ><a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Maßnahmen in Bezug auf Inhalte</a
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-start justify-center p-2 mb-5 col-span-1 md:col-span-2 lg:col-span-1"
+                >
+                  <p class="text-slate-300 py-4 text-2xl text-black">
+                    Hilfe - Konto
+                  </p>
+                  <a
+                    class="text-[#117a37] text-lg pt-4 pb-3 hover:underline"
+                    href="#"
+                    >Anmelden</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Hilfe zum Profil</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Kontoeinstellungen</a
+                  >
+                  <a
+                    class="text-[#117a37] text-lg pb-3 hover:underline"
+                    href="#"
+                    >Sicherheit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card with button -->
+      <div
+        class="bg-cover pt- text-center bg-no-repeat lg:block lg:w-3/3 bg-white"
+      >
+        <div class="py-20 px-4 mx-auto">
+          <h2
+            class="text-5xl -tracking-[0.1rem] pb-[32.16px] font-bold text-black"
+          >
+            Schau bei der Community vorbei
+          </h2>
+          <p class="mb-4 pb-[18px] font-normal max-w-[490px] mx-auto text-lg">
+            Noch Fragen? Finde Antworten von bestens informierten Fans in
+            unserer weltweiten Community!
+          </p>
+          <!-- button -->
+          <div>
+            <button
+              class="bg-[#1ed760] hover:scale-105 active:bg-[#117a37] text-sm text-black font-bold py-3.5 px-8 rounded-full"
+            >
+              Antworten finden
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
